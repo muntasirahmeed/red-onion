@@ -12,7 +12,7 @@ const Information = () => {
   return (
     <div className="max-w-[1280px] mx-auto mb-16 bg-gray-100">
       <div className="w-5/12 mx-auto md:mx-0  my-10 pl-5">
-        <h1 className="text-3xl  font-poppins text-center md:text-left mb-5 text-gray-700">
+        <h1 className="text-3xl font-semibold  font-poppins text-center md:text-left mb-5 text-gray-700">
           Why you choose us{" "}
         </h1>
         <p className="font-poppins text-sm text-gray-600 text-center md:text-left">
