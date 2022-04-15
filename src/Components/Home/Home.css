@@ -1,0 +1,22 @@
+.home {
+  background-image: url("/src/Images/all-image/bannerbackground.png");
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  height: 450px ;
+  width: 100%;
+ max-width: 1280px;
+ margin: auto;
+
+}
+/* .input-element{}
+.button-element{
+    transform: translate(-100%);
+    border-radius: 50px;
+} */
+@media only screen and (max-width: 600px) {
+    .home {
+      background-size: auto;
+    }
+  }
