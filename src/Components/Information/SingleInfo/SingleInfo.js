@@ -4,7 +4,7 @@ const SingleInfo = ({ info }) => {
   const { image, title } = info;
   return (
     <div className="w-[400px] mx-auto">
-      <img  src={image} alt="" />
+      <img className="" src={image} alt="" />
       <div className="flex item-start pt-5 ml-5">
         <span className="">
           <TruckIcon className="w-10 text-white bg-rose-700 rounded-full p-2"></TruckIcon>{" "}
