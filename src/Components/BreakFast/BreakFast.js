@@ -15,10 +15,12 @@ const BreakFast = () => {
         {breakfast.map((food) => (
           <SingleFood key={food.id} food={food}></SingleFood>
         ))}
-          </div>
-          {/* <button className="bg-rose-700  mx-auto text-white py-2 px-6 rounded-md hover:bg-rose-800 items-center font-poppins duration-300 font-semibold ease-in-out flex  mb-10">
-            Checkout Your Food <ArrowRightIcon className="w-6 ml-4"></ArrowRightIcon>
-          </button> */}
+      </div>
+
+      <button className="bg-rose-700  mx-auto text-white py-2 px-6 rounded-md hover:bg-rose-800 items-center font-poppins duration-300 font-semibold ease-in-out flex  mb-10">
+        Checkout Your Food{" "}
+        <ArrowRightIcon className="w-6 ml-4"></ArrowRightIcon>
+      </button>
     </div>
   );
 };

@@ -1,0 +1,57 @@
+[
+    {
+       "id":1, "name":"Healthy Meal Plan", "tagLine":"How we dream about our future","price":23.99, "image":"https://i.ibb.co/bNg5xcG/breakfast1.png"
+    },
+   
+    {
+       "id":3, "name":"Indian Lunch", "tagLine":"How we dream about our future","price":25.99, "image":"https://i.ibb.co/swD5G2g/breakfast3.png"
+    },
+    {
+        "id":2, "name":"Fried Chicken Bento", "tagLine":"How we dream about our future","price":20.99, "image":"https://i.ibb.co/hZKRRRq/breakfast2.png"
+     },
+    {
+        "id":5, "name":"Beef Steak", "tagLine":"How we dream about our future","price":26.99, "image":"https://i.ibb.co/LnHXrjQ/breakfast5.png"
+     },
+    {
+       "id":4, "name":"Tarragon-Rubbed-Salmon", "tagLine":"How we dream about our future","price":24.99, "image":"https://i.ibb.co/kyhg1xV/breakfast6.png"
+    },
+   
+    {
+       "id":6, "name":"Honey Soy Glazzed", "tagLine":"How we dream about our future","price":29.99, "image":"https://i.ibb.co/G2SmKx1/breakfast4.png"
+    },
+    {
+        "id":7, "name":"Healthy Meal Plan", "tagLine":"How we dream about our future","price":23.99, "image":"https://i.ibb.co/8Y0VFNN/lunch1.png"
+     },
+     {
+        "id":8, "name":"Fried Chicken Bento", "tagLine":"How we dream about our future","price":20.99, "image":"https://i.ibb.co/F4v1JyD/lunch2.png"
+     },
+     {
+        "id":9, "name":"Indian Lunch", "tagLine":"How we dream about our future","price":25.99, "image":"https://i.ibb.co/GpX8n4n/lunch3.png"
+     },
+     {
+        "id":10, "name":"Tarragon-Rubbed-Salmon", "tagLine":"How we dream about our future","price":24.99, "image":"https://i.ibb.co/379C1dN/lunch4.png"
+     },
+     {
+        "id":11, "name":"Beef Steak", "tagLine":"How we dream about our future","price":26.99, "image":"https://i.ibb.co/ZKV4YTN/lunch5.png"
+     },
+     {
+        "id":12, "name":"Honey Soy Glazzed", "tagLine":"How we dream about our future","price":29.99, "image":"https://i.ibb.co/HzvmVRd/lunch6.png"
+     }, {
+        "id":13, "name":"Healthy Meal Plan", "tagLine":"How we dream about our future","price":23.99, "image":"https://i.ibb.co/V3h6Xq1/dinner1.png"
+     },
+     {
+        "id":14, "name":"Fried Chicken Bento", "tagLine":"How we dream about our future","price":20.99, "image":"https://i.ibb.co/nCxBJzw/dinner2.png"
+     },
+     {
+        "id":15, "name":"Indian Lunch", "tagLine":"How we dream about our future","price":25.99, "image":"https://i.ibb.co/rc6DPGv/dinner3.png"
+     },
+     {
+        "id":16, "name":"Tarragon-Rubbed-Salmon", "tagLine":"How we dream about our future","price":24.99, "image":"https://i.ibb.co/jk8cwcB/dinner4.png"
+     },
+     {
+        "id":17, "name":"Beef Steak", "tagLine":"How we dream about our future","price":26.99, "image":"https://i.ibb.co/fdVnwBb/dinner5.png"
+     },
+     {
+        "id":18, "name":"Honey Soy Glazzed", "tagLine":"How we dream about our future","price":29.99, "image":"https://i.ibb.co/rHczFp5/dinner6.png"
+     }
+]
