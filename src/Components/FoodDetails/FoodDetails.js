@@ -1,7 +1,7 @@
 import { MinusIcon, PlusIcon, ShoppingCartIcon } from "@heroicons/react/solid";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import ClickFood from "../ClickFood/ClickFood";
+
 
 const FoodDetails = () => {
   const { id } = useParams();

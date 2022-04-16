@@ -1,20 +1,27 @@
 import React, { useState } from "react";
 import logo from "../../Images/all-image/logo2.png";
-import {
-  ShoppingCartIcon,
-  XIcon,
-  MenuAlt1Icon,
-} from "@heroicons/react/solid";
+import { ShoppingCartIcon, XIcon, MenuAlt1Icon } from "@heroicons/react/solid";
 import { useNavigate } from "react-router-dom";
+import { signOut } from "firebase/auth";
+import auth from "../../Firebase/firebase.init";
+import { useAuthState } from "react-firebase-hooks/auth";
 const Navber = () => {
+  const [user] = useAuthState(auth);
+  const logout = () => {
+    signOut(auth);
+  };
   const [open, setOpen] = useState(false);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
-
     <nav className="max-w-[1280px] mx-auto  bg-gray-100 w-full top-0 left-0">
       <div className="flex items-center justify-between py-4 md:px-10 px-7">
         <div className="">
-          <img onClick={()=>navigate('/')} className="h-10 cursor-pointer" src={logo} alt="" />
+          <img
+            onClick={() => navigate("/")}
+            className="h-10 cursor-pointer"
+            src={logo}
+            alt=""
+          />
         </div>
         <div onClick={() => setOpen(!open)}>
           {open ? (
@@ -30,16 +37,37 @@ const Navber = () => {
               : "top-[-490px] md:opacity-100 opacity-0 transition-all ease-in"
           }`}
         >
-                 
-                  <span className="">
+          <span className="">
             {" "}
             <ShoppingCartIcon className="w-6 text-gray-600"></ShoppingCartIcon>{" "}
           </span>
-          <span onClick={()=>navigate('/login')} className="block font-semibold text-lg text-gray-600 cursor-pointer">Login</span>
-          <button onClick={()=>navigate('/signup')} className="bg-rose-700 text-white py-2 px-6 rounded-full  hover:bg-rose-700 duration-300 font-semibold ease-in-out">
-            Sign Up
-          </button>
 
+          {user ? (
+            ""
+          ) : (
+            <span
+              onClick={() => navigate("/login")}
+              className="block font-semibold text-lg text-gray-600 cursor-pointer"
+            >
+              Login
+            </span>
+          )}
+
+          {user ? (
+            <button
+              onClick={logout}
+              className="bg-rose-700 text-white py-2 px-6 rounded-full  hover:bg-rose-700 duration-300 font-semibold ease-in-out"
+            >
+              SignOut
+            </button>
+          ) : (
+            <button
+              onClick={() => navigate("/signup")}
+              className="bg-rose-700 text-white py-2 px-6 rounded-full  hover:bg-rose-700 duration-300 font-semibold ease-in-out"
+            >
+              Sign Up
+            </button>
+          )}
         </div>
       </div>
     </nav>
